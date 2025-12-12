@@ -2,6 +2,9 @@
 #define STACK_H
 #include <stdbool.h> 
 
+// PR test
+printf("hello world");
+
 typedef int Item;
 typedef struct stack {
 Item * contents;
@@ -18,4 +21,5 @@ Item pop(Stack *s);
 Item peek(Stack *s);
 static void stack_underflow(void);
 static void reallocate(Stack * stack);
+
 #endif
